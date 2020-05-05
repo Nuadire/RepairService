@@ -1,0 +1,15 @@
+.logo {
+
+    &__link {
+        width: 97px;
+        height: 51px;
+        display: block;
+        border-radius: 26px;
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2pt $color-focus;
+        }
+    }
+
+}

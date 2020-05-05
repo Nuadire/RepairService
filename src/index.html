@@ -1,14 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="service repair dell">
+  <meta name="description"
+    content="Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css" media="screen and (max-width: 640px)"></link> 
 </head>
+
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+  <div class="layout-positioner">
+    <header class="header">
+      <div class="header__burger">
+        <a class="a-interaction" href="#">
+          <img src="../src/blocks/header/img/burger.svg" alt="menu" class="a-interaction__img a-interaction__img--menu">
+        </a>
+      </div>
+
+      <div class="logo header__logo">
+        <a class="logo__link" href="#">
+          <img src="../src/blocks/header/logo/img/Group.svg" alt="CPS" class="logo__img">
+        </a>
+      </div>
+
+      <div class="connection header__connection">
+        <a class="a-interaction" href="#">
+          <img src="../src/blocks/connection/img/call.svg" alt="call"
+            class="a-interaction__img a-interaction__img--call">
+        </a>
+        <a class="a-interaction" href="#">
+          <img src="../src/blocks/connection/img/chat.svg" alt="chat"
+            class="a-interaction__img a-interaction__img--chat">
+        </a>
+        <a class="a-interaction" href="#">
+          <img src="../src/blocks/connection/img/profile.svg" alt="profile"
+            class="a-interaction__img a-interaction__img--profile">
+        </a>
+      </div>
+
+      <div class="bid header__bid">
+        <div class="bid__item">
+          <a class="a-interaction" id="request" href="#">
+            <img src="../src/blocks/header/img/repair.svg" alt="request"
+              class="a-interaction__img a-interaction__img--request">
+          </a>
+        </div>
+        <div class="bid__item">
+          <a class="a-interaction a-interaction--last" id="check-status" href="#">
+            <img src="../src/blocks/header/img/checkstatus.svg" alt="check-status"
+              class="a-interaction__img a-interaction__img--check-status">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <header>
+        <div class="header-page">
+          <h1 class="header-page__title">Услуги и сервисы</h1>
+          <div class="bid header-page__bid">
+            <div class="bid__item">
+              <label class="bid__label" for="request">Оставить заявку</label>
+              <a class="a-interaction bid__link" id="request" href="#">
+                <img src="../src/blocks/header/img/repair.svg" alt="request"
+                  class="a-interaction__img a-interaction__img--request">
+              </a>
+            </div>
+            <div class="bid__item">
+              <label class="bid__label" for="check-status">
+                Статус ремонта
+              </label>
+              <a class="a-interaction" id="check-status" href="#">
+                <img src="../src/blocks/header/img/checkstatus.svg" alt="check-status"
+                  class="a-interaction__img a-interaction__img--check-status">
+              </a>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-page">
+          <ul class="nav-page__ul">
+            <li class="nav-page__li nav-page__li--active">
+              <a href="#repaired-brand" class="nav-page__item">Ремонтируемые устройства</a>
+            </li>
+            <li class="nav-page__li"> <a href="#additional-services" class="nav-page__item">Дополнительные услуги</a>
+            </li>
+            <li class="nav-page__li"> <a href="#service-price" class="nav-page__item">Цены на услуги</a> </li>
+            <li class="nav-page__li"> <a href="#servece-addresses" class="nav-page__item">Адреса сервисных центров</a>
+            </li>
+            <li class="nav-page__li"> <a href="#special-price" class="nav-page__item">Специальные цены</a> </li>
+            <li class="nav-page__li"> <a href="#review" class="nav-page__item">Отзывы</a> </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="story-picture">
+        <div class="story-picture__story">
+          <div class="story-picture__text ">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
+            свой ноутбук Dell с официальной гарантией производителя.
+            <br>
+            <br>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+            советуют нас родным и близким.
+            <br>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ipsa ratione culpa sed ipsum nisi maxime
+            voluptatibus assumenda dolorum deserunt eius autem eum, eaque quibusdam suscipit quis porro similique
+            voluptates?
+          </div>
+          <div class="show-more">
+            <label class="show-more__label">
+              <input type="checkbox" class="show-more__input story-picture__input visually-hidden">
+              <span class="show-more__icon"></span>
+              Читать далее
+            </label>
+          </div>
+        </div>
+        <div class="story-picture__picture"></div>
+      </section>
+      <section class="block">
+        <div class="block__header">
+          <h2 class="block__title">
+            Ремонт техники различных брендов
+          </h2>
+        </div>
+        <div class="block__container swiper-container">
+          <div class="block__wrapper swiper-wrapper">
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/1.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/2.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/3.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/4.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/5.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/6.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/7.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/8.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/1.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+            <div class="brand block__slide swiper-slide">
+              <img src="../img/brand/2.png" alt="Lenovo" class="brand__picture">
+              <button class="more-details"></button>
+            </div>
+          </div>
+          <div class="block__pagination swiper-pagination"></div>
+        </div>
+        <div class="show-more block__show-more">
+          <label class="show-more__label">
+            <input type="checkbox" class="show-more__input show-more__input--brand visually-hidden">
+            <span class="show-more__icon"></span>
+            Читать далее
+          </label>
+        </div>
+      </section>
+    </main>
+  </div>
+
 </body>
+
 </html>

@@ -1,0 +1,20 @@
+.more-details {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-icon;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid #FF3E79;
+        border-top: 2px solid #FF3E79;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}

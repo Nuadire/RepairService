@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  border-bottom: 1px solid $color-border;
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 4px;
+    left: 0px;
+    width: 2px;
+    height: 32px;
+    background-color: $color-separate;
+
+  }
+
+  &__burger {
+    margin-left: 16px;
+  }
+
+  &__logo {
+    @media screen and (min-width: $screen-xs) {
+      margin: -5px auto 0 auto;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      margin: -5px auto 0 40px;
+    }
+
+    &::before {
+      @media screen and (min-width: $screen-sm) {
+        content: "";
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 12px;
+        width: 2px;
+        height: 32px;
+        background-color: $color-separate;
+      }
+    }
+  }
+
+  &__connection {
+    margin-right: 20px;
+
+    @media screen and (min-width: $screen-xs) {
+      display: none;
+    }
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+    }
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__bid {
+    @media screen and (min-width: $screen-xs) {
+      margin-right: 16px;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      margin-right: 24px;
+    }
+  }
+}

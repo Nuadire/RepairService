@@ -1,3 +1,3 @@
 import '../scss/style.scss';
-
-console.log('Works!');
+import './story_picture/show_more';
+import './block/block';

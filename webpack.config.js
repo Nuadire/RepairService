@@ -43,31 +43,32 @@ module.exports = {
         ],
       },
 
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
-          },
-        ]
+        use: [{
+          loader: 'file-loader?name=./fonts/[name].[ext]'
+        }, ]
       },
 
       // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./static/[name].[ext]'
-          },
-        ]
+        use: [{
+          loader: 'file-loader?name=./static/[name].[ext]'
+        }, ]
       },
     ],
   },
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
+      title: 'CPS service',
       template: './src/index.html',
       inject: true,
       minify: {
@@ -82,11 +83,9 @@ module.exports = {
     }),
 
     // Копируем картинки
-    new CopyWebpackPlugin([
-      {
-        from: './src/img',
-        to: 'img',
-      },
-    ])
+    new CopyWebpackPlugin([{
+      from: './src/img',
+      to: 'img',
+    }, ])
   ],
 };

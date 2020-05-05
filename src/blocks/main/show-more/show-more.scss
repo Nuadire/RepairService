@@ -1,0 +1,29 @@
+.show-more {
+  padding: 16px 25px;
+
+  &__label {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: absolute;
+    margin-left: -26px;
+    margin-top: -2px;
+    width: 24px;
+    height: 24px;
+    background-image: url("/img/show-more/expand.svg");
+  }
+
+  &__input {
+
+    &:checked+.show-more__icon {
+      transform: rotate(90deg);
+    }
+
+    &:focus+.show-more__icon {
+      outline: 2px solid $color-focus;
+    }
+  }
+}
