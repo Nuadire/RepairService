@@ -58,7 +58,8 @@ body {
 @media screen and (min-width: 1440px) {
   .layout-positioner {
     width: 1440px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    position: relative; } }
 
 .connection {
   display: flex;
