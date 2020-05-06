@@ -21,12 +21,12 @@ module.exports = {
   // Source maps для удобства отладки
   devtool: "source-map",
 
-  // убираем дублирование кода
-  optimization: {
-    splitChunks: {
-      chunks: "all"
-    }
-  },
+  // // убираем дублирование кода
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: "all"
+  //   }
+  // },
 
   module: {
     rules: [
