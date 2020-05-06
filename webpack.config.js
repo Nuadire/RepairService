@@ -14,7 +14,8 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/[name].[contenthash].js',
+    // filename: './js/[name].[contenthash].js',
+    filename: './js/index.js',
     path: path.resolve(__dirname, "dist")
   },
 
@@ -54,10 +55,10 @@ module.exports = {
         ],
       },
 
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
+      // {
+      //   test: /\.css$/i,
+      //   use: [MiniCssExtractPlugin.loader, 'css-loader']
+      // },
 
       // Подключаем шрифты из css
       {
@@ -91,14 +92,18 @@ module.exports = {
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: 'style.css',
+      // filename: '[name].[contenthash].css',
     }),
 
     // Копируем картинки
     new CopyWebpackPlugin([{
       from: './src/img',
       to: 'img',
-    }, ]),
+    },{
+      from: './src/lib',
+      to: 'lib',
+    } ]),
 
     // clean dist
     new CleanWebpackPlugin()
