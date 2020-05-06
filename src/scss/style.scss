@@ -1,18 +1,20 @@
 @import "../fonts/font.scss";
 @import "./variable.scss";
-@import "../blocks/common.scss";
-@import "../blocks/layout-positioner.scss";
-@import "../blocks/connection/connection.scss";
-@import "../blocks/header/header.scss";
-@import "../blocks/header/logo/logo.scss";
-@import "../blocks/header/bid/bid.scss";
-@import "../blocks/header/a-interaction/a-interaction.scss";
+@import "../blocks//common.scss";
+@import "../blocks//layout-positioner.scss";
+@import "../blocks//connection/connection.scss";
+@import "../blocks//header/header.scss";
+@import "../blocks//logo/logo.scss";
+@import "../blocks/bid/bid.scss";
+@import "../blocks/a-interaction/a-interaction.scss";
 
-@import "../blocks/main/header-page/header-page.scss";
-@import "../blocks/main/header-page/nav-page/nav-page.scss";
-@import "../blocks/main/story-picture/story-picture.scss";
-@import "../blocks/main/show-more/show-more.scss";
+@import "../blocks//header-page/header-page.scss";
+@import "../blocks//nav-page/nav-page.scss";
+@import "../blocks//story-picture/story-picture.scss";
+@import "../blocks//show-more/show-more.scss";
 
-@import "../blocks/main/block/block.scss";
-@import "../blocks/main/block/brand/brand.scss";
-@import "../blocks/main/block/more-details/more-details.scss";
+@import "../../node_modules/swiper/swiper.scss";
+
+@import "../blocks//block/block.scss";
+@import "../blocks//brand/brand.scss";
+@import "../blocks//more-details/more-details.scss";

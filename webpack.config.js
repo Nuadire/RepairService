@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 
 module.exports = {
   // Входной файл
@@ -11,11 +14,19 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js'
+    filename: './js/[name].[contenthash].js',
+    path: path.resolve(__dirname, "dist")
   },
 
   // Source maps для удобства отладки
   devtool: "source-map",
+
+  // убираем дублирование кода
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
+  },
 
   module: {
     rules: [
@@ -34,7 +45,7 @@ module.exports = {
 
       // Компилируем SCSS в CSS
       {
-        test: /\.scss$/,
+        test: /\.scss$/i,
         use: [
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
@@ -44,7 +55,7 @@ module.exports = {
       },
 
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
 
@@ -77,15 +88,19 @@ module.exports = {
       }
     }),
 
+
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].[contenthash].css',
     }),
 
     // Копируем картинки
     new CopyWebpackPlugin([{
       from: './src/img',
       to: 'img',
-    }, ])
+    }, ]),
+
+    // clean dist
+    new CleanWebpackPlugin()
   ],
 };
