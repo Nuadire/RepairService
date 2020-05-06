@@ -26,7 +26,7 @@ const initSwiper = function () {
 
 const mediaQuery = window.matchMedia(`screen and (max-width: ${SCREEN_SM}px)`);
 if (mediaQuery.matches) {
-  addScript("../lib/swiper.min.js", initSwiper);
+  addScript("lib/swiper.min.js", initSwiper);
 } else {
   const showMoreInput = document.querySelector(".show-more__input--brand");
   showMoreInput.addEventListener("change", function (evt) {
