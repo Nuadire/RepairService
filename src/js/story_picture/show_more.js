@@ -1,4 +1,3 @@
-import * as Screen from "../const";
 const showMoreInput = document.querySelector(".story-picture__input");
 showMoreInput.addEventListener("change", function (evt) {
   const blockWrapper = this.parentNode.parentNode.parentNode.querySelector(".story-picture__text");

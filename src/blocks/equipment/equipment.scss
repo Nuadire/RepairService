@@ -1,0 +1,16 @@
+.equipment {
+    width: 240px;
+    height: 160px;
+    border: 1px solid $color-separate;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    background: #FFFFFF;
+
+    &__details{
+        align-self: flex-end;
+    }
+}

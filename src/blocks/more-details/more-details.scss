@@ -5,6 +5,7 @@
     border-radius: 50%;
     position: relative;
     background-color: white;
+    cursor: pointer;
 
     &::after {
         content: "";

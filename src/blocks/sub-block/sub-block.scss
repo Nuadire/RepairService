@@ -1,0 +1,28 @@
+.sub-block {
+
+  &__title {
+    @media screen and (min-width: $screen-xs) {
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-text--title;
+      opacity: 0.72;
+
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      display: none;
+    }
+
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $color-text;
+    font-family: $font-family;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,40 @@
+.order-btn {
+    width: 119px;
+    background-color: $color-icon;
+    border-radius: 16px; 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+    padding: 4px 16px 4px 12px;
+    cursor: pointer;
+
+    &:hover {
+        filter: opacity(0.75);
+    }
+    
+    &__text {
+        font-family: $font-family;
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: -0.15px;
+    }
+    
+    &__icon {   
+        position: relative;
+        margin: auto 0;
+        width: 5px;
+        height: 5px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-right: 2px solid white;
+            border-top: 2px solid white;
+            transform: rotate(45deg);
+        }
+    }
+}

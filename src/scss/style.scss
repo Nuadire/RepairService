@@ -17,5 +17,12 @@
 @import "../../node_modules/swiper/components/pagination/pagination.scss"; 
 
 @import "../blocks//block/block.scss";
-@import "../blocks//brand/brand.scss";
 @import "../blocks//more-details/more-details.scss";
+
+@import "../blocks//brand/brand.scss";
+@import "../blocks/equipment/equipment.scss";
+
+@import "../blocks/block-prices/block-prices.scss";
+@import "../blocks/repair-service/repair-service.scss";
+@import "../blocks/sub-block/sub-block.scss";
+@import "../blocks/order-btn/order-btn.scss";

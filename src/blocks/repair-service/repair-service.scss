@@ -1,0 +1,124 @@
+.repair-service {
+
+
+  @media screen and (min-width: $screen-sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  article:not(:nth-last-of-type(1)) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      background-color: $color-separate;
+
+      @media screen and (min-width: $screen-sm) {
+        left: 16px;
+        width: calc(100% - 32px);
+
+      }
+
+      @media screen and (min-width: $screen-lg) {
+        left: 24px;
+        width: calc(100% - 48px);
+
+      }
+    }
+  }
+
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 16px;
+    box-sizing: border-box;
+
+
+    @media screen and (min-width: $screen-xs) {
+      width: 260px;
+      height: 200px;
+      border-radius: 6px;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      flex-direction: row;
+      align-items: center;
+      //   align-content: center;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      padding: 16px 24px;
+    }
+
+
+
+    &--header {
+      @media screen and (min-width: $screen-xs) {
+        display: none;
+
+      }
+
+      @media screen and (min-width: $screen-sm) {
+        display: flex;
+        background-color: $color-background;
+      }
+    }
+  }
+
+  &__service {
+    @media screen and (min-width: $screen-sm) {
+      width: 53%;
+      overflow: hidden;
+      padding-right: 5px;
+    }
+
+  }
+
+  &__price {
+    @media screen and (min-width: $screen-sm) {
+      width: 13%;
+      min-width: 80px;
+
+    }
+  }
+
+  &__last {
+    display: flex;
+
+    @media screen and (min-width: $screen-sm) {
+      width: 34%;
+      align-items: center;
+    }
+  }
+
+  &__time {
+    margin-right: auto;
+
+    @media screen and (min-width: $screen-sm) {
+      min-width: 81px;
+      margin-left: 5%;
+
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin-left: 17%;
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: $screen-sm) {
+      margin-left: 5px;
+      min-width: 119px;
+    }
+  }
+}
