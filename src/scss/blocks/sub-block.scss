@@ -1,6 +1,8 @@
 .sub-block {
 
   &__title {
+    font-family: $font-family;
+
     @media screen and (min-width: $screen-xs) {
       font-size: 14px;
       line-height: 16px;

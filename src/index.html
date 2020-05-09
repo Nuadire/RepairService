@@ -10,8 +10,14 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-  <div class="layout-positioner">
+<body class="general">
+  <svg display="none">
+    <symbol id="corner" width="7" height="10" viewBox="0 0 7 10">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z" />
+    </symbol>
+  </svg>
+  <div class="general__container">
     <header class="header">
       <div class="header__burger">
         <a class="a-interaction" href="#">
@@ -51,6 +57,61 @@
         </div>
       </div>
     </header>
+    <div class="menu">
+      <header class="header-menu">
+        <div class="header-menu__close">
+          <a class="a-interaction" href="#">
+            <img src="img/menu/close.svg" alt="close-menu" class="a-interaction__img a-interaction__img--close-menu">
+          </a>
+        </div>
+        <div class="logo header-menu__logo">
+          <a class="logo__link" href="#">
+            <img src="img/logo/Group.svg" alt="CPS" class="logo__img">
+          </a>
+        </div>
+        <div class="search header-menu__search">
+          <a class="a-interaction" href="#">
+            <img src="img/menu/search.svg" alt="search" class="a-interaction__img a-interaction__img--search">
+          </a>
+        </div>
+      </header>
+      <nav class="main-menu menu__main-menu">
+        <ul class="main-menu__ul">
+          <li class="main-menu__li"><a href="#" class="main-menu__item main-menu__item--active focus">Ремонт
+              техники</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Услуги и сервисы</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Корпоративным клиентам</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Продавцам техники</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Партнерам</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Производителям</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Наши сервисные центры</a></li>
+          <li class="main-menu__li"><a href="#" class="main-menu__item focus">Контакты</a></li>
+        </ul>
+      </nav>
+      <footer class="footer-menu">
+        <div class="contact-info">
+          <div class="connection contact-info__connection">
+            <a class="a-interaction" href="#">
+              <img src="img/header/call.svg" alt="call" class="a-interaction__img a-interaction__img--call">
+            </a>
+            <a class="a-interaction" href="#">
+              <img src="img/header/chat.svg" alt="chat" class="a-interaction__img a-interaction__img--chat">
+            </a>
+            <a class="a-interaction" href="#">
+              <img src="img/header/profile.svg" alt="profile" class="a-interaction__img a-interaction__img--profile">
+            </a>
+          </div>
+          <a href="mailto:mail@cps.com" class="contact-info__mail">mail@cps.com</a>
+          <a href="tel:88008908900" class="contact-info__phone-number">8 800 890 8900</a>
+        </div>
+        <ul class="togle-lang footer-menu__togle-lang">
+          <li class="togle-lang__li"><a href="#" class="toggle-lang__item toggle-lang__item--active  focus">RU</a>
+          </li>
+          <li class="togle-lang__li"><a href="#" class="toggle-lang__item focus">EN</a></li>
+          <li class="togle-lang__li"><a href="#" class="toggle-lang__item focus">CH</a></li>
+        </ul>
+      </footer>
+    </div>
     <main>
       <header>
         <div class="header-page">
@@ -124,62 +185,76 @@
           <div class="block__wrapper">
             <div class="brand block__slide">
               <img src="img/main/brand/1.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/2.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/3.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/4.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/5.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/6.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/7.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/8.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/1.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/2.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/6.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/7.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/8.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="brand block__slide">
               <img src="img/main/brand/1.png" alt="Lenovo" class="brand__picture">
-              <button class="more-details"></button>
+              <button class="more-details"><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
           </div>
-          <div class="block__pagination swiper-pagination"></div>
+          <div class="block__pagination"></div>
         </div>
         <div class="show-more block__show-more">
           <label class="show-more__label">
@@ -199,38 +274,46 @@
           <div class="block__wrapper">
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт ноутбуков</div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт планшетов </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт ПК </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт мониторов </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт ноутбуков</div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт планшетов </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт ПК </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
             <div class="equipment block__slide">
               <div class="equipment__title">Ремонт мониторов </div>
-              <button class="more-details equipment__details "></button>
+              <button class="more-details equipment__details "><svg class="more-details__icon">
+                  <use xlink:href="#corner" /></svg></button>
             </div>
           </div>
-          <div class="block__pagination swiper-pagination"></div>
+          <div class="block__pagination"></div>
         </div>
         <div class="show-more block__show-more">
           <label class="show-more__label">
@@ -278,7 +361,8 @@
                 </div>
                 <button class="order-btn repair-service__button">
                   <span class="order-btn__text">Заказать</span>
-                  <div class="order-btn__icon"></div>
+                  <svg class="order-btn__icon">
+                    <use xlink:href="#corner" /></svg>
                 </button>
               </div>
             </article>
@@ -299,7 +383,8 @@
                 </div>
                 <button class="order-btn repair-service__button">
                   <span class="order-btn__text">Заказать</span>
-                  <div class="order-btn__icon"></div>
+                  <svg class="order-btn__icon">
+                    <use xlink:href="#corner" /></svg>
                 </button>
               </div>
             </article>
@@ -320,7 +405,8 @@
                 </div>
                 <button class="order-btn repair-service__button">
                   <span class="order-btn__text">Заказать</span>
-                  <div class="order-btn__icon"></div>
+                  <svg class="order-btn__icon">
+                    <use xlink:href="#corner" /></svg>
                 </button>
               </div>
             </article>
@@ -341,7 +427,8 @@
                 </div>
                 <button class="order-btn repair-service__button">
                   <span class="order-btn__text">Заказать</span>
-                  <div class="order-btn__icon"></div>
+                  <svg class="order-btn__icon">
+                    <use xlink:href="#corner" /></svg>
                 </button>
               </div>
             </article>
@@ -362,19 +449,40 @@
                 </div>
                 <button class="order-btn repair-service__button">
                   <span class="order-btn__text">Заказать</span>
-                  <div class="order-btn__icon"></div>
+                  <svg class="order-btn__icon">
+                    <use xlink:href="#corner" /></svg>
                 </button>
               </div>
             </article>
 
-
           </div>
-          <div class="block-prices__pagination swiper-pagination"></div>
+          <div class="block-prices__pagination"></div>
         </div>
+        <footer class="block-prices__footer">
+          <p class="block-prices__clarification">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
+            предложения на постоянное обслуживание, оставьте заявку.
+          </p>
+          <button class="commercial-proposal block-prices__proposal">
+            <span class="commercial-proposal__text">Получить коммерческое предложение</span>
+            <svg class="commercial-proposal__corner">
+              <use xlink:href="#corner" /></svg>
+          </button>
+        </footer>
       </section>
+      <footer class="footer-site">
+        <div class="footer-site__developers">
+          © 2019 CPS
+          <br>
+          Разработано командой Apesong
+        </div>
+        <a href="#" class="footer-site__privacy-policy">Политика конфиденциальности</a>
+        <div class="footer-site__not-public-offer">Информация, размещенная на данной странице, не является публичной
+          офертой
+        </div>
+      </footer>
     </main>
   </div>
-
 </body>
 
 </html>

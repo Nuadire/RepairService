@@ -6,16 +6,15 @@
     position: relative;
     background-color: white;
     cursor: pointer;
+    position: relative;
 
-    &::after {
-        content: "";
+    &__icon {
         position: absolute;
+        width: 7px;
+        height: 10px;
         top: 50%;
         left: 50%;
-        width: 6px;
-        height: 6px;
-        border-right: 2px solid #FF3E79;
-        border-top: 2px solid #FF3E79;
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%);
+        fill: $color-icon;
     }
 }

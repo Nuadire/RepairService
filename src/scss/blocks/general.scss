@@ -1,0 +1,11 @@
+.general {
+
+  &__container {
+    @media screen and (min-width: $screen-xl) {
+      width: 1440px;
+      margin: 0 auto;
+      position: relative;
+
+    }
+  }
+}

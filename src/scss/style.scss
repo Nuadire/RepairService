@@ -1,28 +1,34 @@
 @import "../fonts/font.scss";
 @import "./variable.scss";
-@import "../blocks//common.scss";
-@import "../blocks//layout-positioner.scss";
-@import "../blocks//connection/connection.scss";
-@import "../blocks//header/header.scss";
-@import "../blocks//logo/logo.scss";
-@import "../blocks/bid/bid.scss";
-@import "../blocks/a-interaction/a-interaction.scss";
+@import "./blocks//common.scss";
+@import "./blocks/general.scss";
 
-@import "../blocks//header-page/header-page.scss";
-@import "../blocks//nav-page/nav-page.scss";
-@import "../blocks//story-picture/story-picture.scss";
-@import "../blocks//show-more/show-more.scss";
+@import "./blocks/menu.scss";
+
+@import "./blocks/connection.scss";
+@import "./blocks/header.scss";
+@import "./blocks//logo.scss";
+@import "./blocks/bid.scss";
+@import "./blocks/a-interaction.scss";
+
+@import "./blocks/header-page.scss";
+@import "./blocks/nav-page.scss";
+@import "./blocks/story-picture.scss";
+@import "./blocks/show-more.scss";
 
 @import "../../node_modules/swiper/swiper.scss";
-@import "../../node_modules/swiper/components/pagination/pagination.scss"; 
+@import "../../node_modules/swiper/components/pagination/pagination.scss";
 
-@import "../blocks//block/block.scss";
-@import "../blocks//more-details/more-details.scss";
+@import "./blocks/block.scss";
+@import "./blocks/more-details.scss";
 
-@import "../blocks//brand/brand.scss";
-@import "../blocks/equipment/equipment.scss";
+@import "./blocks/brand.scss";
+@import "./blocks/equipment.scss";
 
-@import "../blocks/block-prices/block-prices.scss";
-@import "../blocks/repair-service/repair-service.scss";
-@import "../blocks/sub-block/sub-block.scss";
-@import "../blocks/order-btn/order-btn.scss";
+@import "./blocks/block-prices.scss";
+@import "./blocks/repair-service.scss";
+@import "./blocks/sub-block.scss";
+@import "./blocks/order-btn.scss";
+
+@import "./blocks/footer-site.scss";
+@import "./blocks/commercial-proposal.scss";

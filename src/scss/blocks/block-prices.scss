@@ -1,5 +1,6 @@
 .block-prices {
   border-top: 1px solid $color-border;
+  font-family: $font-family;
 
   &__header {
     background: linear-gradient(to right,
@@ -35,19 +36,38 @@
       // padding-right: 8px;
     }
   }
-  
-  &__wrapper {
-    // @media screen and (min-width: $screen-xs) {
 
-    // }
-  
+  &__wrapper {
+
     @media screen and (min-width: $screen-sm) {
       display: flex;
       flex-direction: column;
     }
-    
-  }
-  // &__slide {
 
-  // }
+  }
+
+  &__footer {
+
+    @media screen and (min-width: $screen-xs) {
+      padding: 0 16px 40px;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      padding: 0 24px 47px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      padding: 0 32px 50px;
+    }
+  }
+
+  &__clarification {
+    font-family: $font-family;
+    margin-top: 0;
+    max-width: 421px;
+
+  }
+
+  &__proposal {
+  }
 }
