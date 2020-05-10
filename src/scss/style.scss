@@ -1,15 +1,18 @@
 @import "../fonts/font.scss";
 @import "./variable.scss";
 @import "./blocks//common.scss";
-@import "./blocks/general.scss";
-
 @import "./blocks/menu.scss";
+@import "./blocks/toggle-lang.scss";
+@import "./blocks/contact-info.scss";
+
+
+@import "./blocks/general.scss";
 
 @import "./blocks/connection.scss";
 @import "./blocks/header.scss";
 @import "./blocks//logo.scss";
 @import "./blocks/bid.scss";
-@import "./blocks/a-interaction.scss";
+@import "./blocks/interaction.scss";
 
 @import "./blocks/header-page.scss";
 @import "./blocks/nav-page.scss";

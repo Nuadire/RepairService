@@ -1,38 +1,45 @@
 .header-page {
+
+
+  &__top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media screen and (min-width: $screen-xs) {
-        padding: 24px 16px 0 16px;
+      padding: 24px 16px 0 16px;
     }
+
     @media screen and (min-width: $screen-sm) {
-        padding: 24px 24px 0 24px;
+      padding: 24px 24px 0 24px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 40px;
+      background-color: $color-focus;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  &__bid {
+    @media screen and (min-width: $screen-xs) {
+      display: none;
     }
 
-    &__title {
-        font-weight: bold;
-        font-size: 28px;
-
-        &::before {
-            position: absolute;
-            left: 0;
-            content: "";
-            width: 4px;
-            height: 40px;
-            background-color: #41F6D7;
-            border-radius: 0 4px 4px 0;
-        }
+    @media screen and (min-width: $screen-xl) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    &__bid {
-        @media screen and (min-width: $screen-xs){
-            display: none;
-        }
-        @media screen and (min-width: $screen-lg){
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
+  }
 }

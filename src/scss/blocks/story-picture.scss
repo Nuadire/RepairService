@@ -10,7 +10,7 @@
     justify-content: space-between;
   }
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     padding: 20px;
   }
 
@@ -40,7 +40,7 @@
       min-width: 360px;
     }
     
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-xl) {
         // margin-top: 50px;
         margin-left: 36px;
         min-width: 531px;

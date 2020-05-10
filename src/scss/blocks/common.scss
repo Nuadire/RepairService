@@ -28,27 +28,3 @@ html {
     -ms-user-select: none;
     user-select: none;
 }
-
-/* общее для текущего проекта */
-body {
-    margin: 0;
-    font-family: $font-family;
-    color: $color-text;
-    font-size: 14px;
-    letter-spacing: 0.2px;
-    background-color: $color-background;
-}
-
-// main {
-//     background-color: $color-background;
-
-//     @media screen and (min-width: $screen-xs){
-//         padding: 24px 16px 0 16px;
-//     }
-//     @media screen and (min-width: $screen-sm){
-//         padding: 24px 24px 0 16px;
-//     }
-//     @media screen and (min-width: $screen-lg){
-//         padding: 24px 24px 32px 24px;
-//     }
-// }

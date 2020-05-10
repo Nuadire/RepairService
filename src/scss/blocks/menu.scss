@@ -1,3 +1,37 @@
 .menu {
-    
+
+    &__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 24px 24px 32px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: white;
+        z-index: 100;
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        left:0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 99;
+    }
+
+    &__main-nav {
+        margin-bottom: auto;
+
+        @media screen and (min-width: $screen-xs){
+            margin-top: 25px;
+        }
+        @media screen and (min-width: $screen-lg){
+            margin-top: 50px;
+        }
+    }
 }

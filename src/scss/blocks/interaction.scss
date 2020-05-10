@@ -1,9 +1,14 @@
-.a-interaction {
-  display: block;
+.interaction {
   width: 40px;
   height: 40px;
   background-color: $color-icon;
   border-radius: 50%;
+  border: none;
+  position: relative;
+
+  &:hover {
+    filter: opacity(0.8);
+  }
 
   &:focus {
     outline: none;
@@ -11,7 +16,7 @@
   }
 
   &__img {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

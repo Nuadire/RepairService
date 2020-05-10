@@ -8,7 +8,7 @@
     padding-left: 24px;
   }
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     padding-left: 34px;
   }
 
@@ -22,7 +22,7 @@
     padding: 0;
     list-style: none;
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-xl) {
       overflow-x: hidden;
       flex-wrap: wrap;
     }

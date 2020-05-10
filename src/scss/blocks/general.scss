@@ -1,11 +1,59 @@
 .general {
+  margin: 0;
+  font-family: $font-family;
+  color: $color-text;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  background-color: $color-background;
 
-  &__container {
+  // &__wrapper {
+  //   @media screen and (min-width: $screen-fhd) {
+  //     width: 1920px;
+  //   }
+  // }
+
+  // &__container {}
+
+  &__menu {
+    @media screen and (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      
+    }
     @media screen and (min-width: $screen-xl) {
-      width: 1440px;
-      margin: 0 auto;
-      position: relative;
+      display: flex;
+      width: 21.25%;
+    }
+    
+    &--active {
+      display: flex;
+      
+      @media screen and (min-width: $screen-xs) {
+        width: 100%;
+      }
+      
+      @media screen and (min-width: 360px) {
+        width: 360px;
+        filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
+        }
+    }
+  }
 
+  &__menu-overlay {
+    &--active {
+      @media screen and (min-width: $screen-xs) {
+        display: block;
+      }
+    }
+  }
+
+  &__page {
+
+    @media screen and (min-width: $screen-xl) {
+      display: block;
+      padding-left: 21.25%;
     }
   }
 }
