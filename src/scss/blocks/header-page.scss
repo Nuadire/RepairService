@@ -16,20 +16,20 @@
     }
   }
 
-  &__title {
-    font-weight: bold;
-    font-size: 28px;
+  // &__title {
+  //   font-weight: bold;
+  //   font-size: 28px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 4px;
-      height: 40px;
-      background-color: $color-focus;
-      border-radius: 0 4px 4px 0;
-    }
-  }
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     left: 0;
+  //     width: 4px;
+  //     height: 40px;
+  //     background-color: $color-focus;
+  //     border-radius: 0 4px 4px 0;
+  //   }
+  // }
 
   &__bid {
     @media screen and (min-width: $screen-xs) {

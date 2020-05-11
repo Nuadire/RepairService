@@ -1,0 +1,13 @@
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    
+    &__item{
+        margin-bottom: 16px;
+    }
+
+    &__confirm{
+        margin-top: 19px;
+        align-self: flex-end;
+    }
+}
