@@ -22,4 +22,16 @@
     transform: translate(-50%, -50%);
   }
 
+  &--close-menu {
+    margin-right: 17px;
+
+    @media screen and (min-width: $screen-xs) {
+      display: block;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
 }

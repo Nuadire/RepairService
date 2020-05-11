@@ -19,17 +19,17 @@
 
 
   &__container {
+    overflow: hidden;
 
     @media screen and (min-width: $screen-xs) {
       padding: 16px;
       width: 100%;
-      overflow: hidden;
     }
 
     @media screen and (min-width: $screen-sm) {
       width: auto;
       height: auto;
-      overflow: auto;
+      // overflow: auto;
       padding: 24px;
       padding-right: 8px;
     }
