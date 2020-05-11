@@ -15,6 +15,7 @@
       <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z"/>
     </symbol>
   </svg>
+  <div class="overlay general__overlay"></div>
   <div class="general__wrapper">
     <header class="header">
       <button class="interaction interaction--menu header__burger">
@@ -53,64 +54,61 @@
       </div>
     </header>
     <main class="general__container">
-      <div class="menu">
-        <div class="menu__container general__menu">
-          <header class="header-menu">
-            <button class="interaction interaction--close-menu">
-              <img src="img/header/close.svg" alt="close-menu" class="interaction__img">
-            </button>
-            <div class="logo header-menu__logo">
-              <a class="logo__link" href="https://nuadire.github.io/RepairService/">
-                <img src="img/header/logo.svg" alt="CPS" class="logo__img">
-              </a>
+      <div class="menu-container general__menu">
+        <header class="menu-container__header">
+          <button class="interaction menu-container__close-menu interaction--close-menu">
+            <img src="img/header/close.svg" alt="close-menu" class="interaction__img">
+          </button>
+          <div class="logo menu-container__logo">
+            <a class="logo__link" href="https://nuadire.github.io/RepairService/">
+              <img src="img/header/logo.svg" alt="CPS" class="logo__img">
+            </a>
+          </div>
+          <button class="interaction interaction--search">
+            <img src="img/header/search.svg" alt="search" class="interaction__img">
+          </button>
+        </header>
+        <nav class="main-nav menu-container__main-nav">
+          <ul class="main-nav__ul">
+            <li class="main-nav__li"><a href="#" class="main-nav__item main-nav__item--active">Ремонт
+                техники</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Услуги и сервисы</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Корпоративным клиентам</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Продавцам техники</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Партнерам</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Производителям</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Наши сервисные центры</a></li>
+            <li class="main-nav__li"><a href="#" class="main-nav__item">Контакты</a></li>
+          </ul>
+        </nav>
+        <footer class="footer-menu">
+          <div class="contact-info">
+            <div class="connection contact-info__connection">
+              <button class="interaction interaction--call">
+                <img src="img/header/call.svg" alt="call" class="interaction__img">
+              </button>
+              <button class="interaction interaction--chat">
+                <img src="img/header/chat.svg" alt="chat" class="interaction__img">
+              </button>
+              <button class="interaction interaction--profile">
+                <img src="img/header/profile.svg" alt="profile" class="interaction__img">
+              </button>
             </div>
-            <button class="interaction interaction--search">
-              <img src="img/header/search.svg" alt="search" class="interaction__img">
-            </button>
-          </header>
-          <nav class="main-nav menu__main-nav">
-            <ul class="main-nav__ul">
-              <li class="main-nav__li"><a href="#" class="main-nav__item main-nav__item--active">Ремонт
-                  техники</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Услуги и сервисы</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Корпоративным клиентам</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Продавцам техники</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Партнерам</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Производителям</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Наши сервисные центры</a></li>
-              <li class="main-nav__li"><a href="#" class="main-nav__item">Контакты</a></li>
-            </ul>
-          </nav>
-          <footer class="footer-menu">
-            <div class="contact-info">
-              <div class="connection contact-info__connection">
-                <button class="interaction interaction--call">
-                  <img src="img/header/call.svg" alt="call" class="interaction__img">
-                </button>
-                <button class="interaction interaction--chat">
-                  <img src="img/header/chat.svg" alt="chat" class="interaction__img">
-                </button>
-                <button class="interaction interaction--profile">
-                  <img src="img/header/profile.svg" alt="profile" class="interaction__img">
-                </button>
-              </div>
-              <a href="mailto:mail@cps.com" class="contact-info__mail">mail@cps.com</a>
-              <a href="tel:88008908900" class="contact-info__phone-number">8 800 890 8900</a>
-            </div>
-            <ul class="toggle-lang footer-menu__toggle-lang">
-              <li class="toggle-lang__li"><a href="#" class="toggle-lang__item toggle-lang__item--active">RU</a>
-              </li>
-              <li class="toggle-lang__li"><a href="#" class="toggle-lang__item">EN</a></li>
-              <li class="toggle-lang__li"><a href="#" class="toggle-lang__item">CH</a></li>
-            </ul>
-          </footer>
-        </div>
-        <div class="menu__overlay general__menu-overlay"></div>
+            <a href="mailto:mail@cps.com" class="contact-info__mail">mail@cps.com</a>
+            <a href="tel:88008908900" class="contact-info__phone-number">8 800 890 8900</a>
+          </div>
+          <ul class="toggle-lang footer-menu__toggle-lang">
+            <li class="toggle-lang__li"><a href="#" class="toggle-lang__item toggle-lang__item--active">RU</a>
+            </li>
+            <li class="toggle-lang__li"><a href="#" class="toggle-lang__item">EN</a></li>
+            <li class="toggle-lang__li"><a href="#" class="toggle-lang__item">CH</a></li>
+          </ul>
+        </footer>
       </div>
       <div class="general__page">
         <header class="header-page">
           <div class="header-page__top">
-            <h1 class="header-page__title">Услуги и сервисы</h1>
+            <h1 class="header-title header-page__title">Услуги и сервисы</h1>
             <div class="bid header-page__bid">
               <div class="bid__item">
                 <label class="bid__label" for="request">Оставить заявку</label>
@@ -355,9 +353,9 @@
                     <div class="sub-block__title">Срок</div>
                     <div class="sub-block__info">30-120 мин</div>
                   </div>
-                  <button class="order-btn repair-service__button">
-                    <span class="order-btn__text">Заказать</span>
-                    <svg class="order-btn__icon">
+                  <button class="custom-btn repair-service__button">
+                    <span class="custom-btn__text">Заказать</span>
+                    <svg class="custom-btn__icon">
                       <use xlink:href="#corner"/></svg>
                   </button>
                 </div>
@@ -377,9 +375,9 @@
                     <div class="sub-block__title">Срок</div>
                     <div class="sub-block__info">30 мин</div>
                   </div>
-                  <button class="order-btn repair-service__button">
-                    <span class="order-btn__text">Заказать</span>
-                    <svg class="order-btn__icon">
+                  <button class="custom-btn repair-service__button">
+                    <span class="custom-btn__text">Заказать</span>
+                    <svg class="custom-btn__icon">
                       <use xlink:href="#corner"/></svg>
                   </button>
                 </div>
@@ -399,9 +397,9 @@
                     <div class="sub-block__title">Срок</div>
                     <div class="sub-block__info">30 мин</div>
                   </div>
-                  <button class="order-btn repair-service__button">
-                    <span class="order-btn__text">Заказать</span>
-                    <svg class="order-btn__icon">
+                  <button class="custom-btn repair-service__button">
+                    <span class="custom-btn__text">Заказать</span>
+                    <svg class="custom-btn__icon">
                       <use xlink:href="#corner"/></svg>
                   </button>
                 </div>
@@ -421,9 +419,9 @@
                     <div class="sub-block__title">Срок</div>
                     <div class="sub-block__info">30 мин</div>
                   </div>
-                  <button class="order-btn repair-service__button">
-                    <span class="order-btn__text">Заказать</span>
-                    <svg class="order-btn__icon">
+                  <button class="custom-btn repair-service__button">
+                    <span class="custom-btn__text">Заказать</span>
+                    <svg class="custom-btn__icon">
                       <use xlink:href="#corner"/></svg>
                   </button>
                 </div>
@@ -443,9 +441,9 @@
                     <div class="sub-block__title">Срок</div>
                     <div class="sub-block__info">30-120 мин</div>
                   </div>
-                  <button class="order-btn repair-service__button">
-                    <span class="order-btn__text">Заказать</span>
-                    <svg class="order-btn__icon">
+                  <button class="custom-btn repair-service__button">
+                    <span class="custom-btn__text">Заказать</span>
+                    <svg class="custom-btn__icon">
                       <use xlink:href="#corner"/></svg>
                   </button>
                 </div>
@@ -455,10 +453,10 @@
             <div class="block-prices__pagination"></div>
           </div>
           <footer class="block-prices__footer">
-            <p class="block-prices__clarification">
+            <div class="block-prices__clarification">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
               предложения на постоянное обслуживание, оставьте заявку.
-            </p>
+            </div>
             <button class="commercial-proposal block-prices__proposal">
               <span class="commercial-proposal__text">Получить коммерческое предложение</span>
               <svg class="commercial-proposal__corner">
@@ -478,6 +476,45 @@
           </div>
         </footer>
       </div>
+      <div class="modal-connection feedback">
+        <header class="modal-connection__header">
+          <button class="interaction modal-connection__close-feedback">
+            <img src="img/header/close.svg" alt="close-menu" class="interaction__img">
+          </button>
+          <h2 class="header-title header-title--h2">Обратная связь</h2>
+        </header>
+        <form name="feedback" action="#" method="post" class="form-modal modal-connection__form">
+          <div class="custom-field form-modal__item">
+            <input autofocus required type="text" name="name" id="field-name" class="custom-field__input">
+            <label for="field-name" class="custom-field__label">Имя</label>
+          </div>
+          <div class="custom-field form-modal__item">
+            <input required type="text" name="phone" id="field-phone" class="custom-field__input">
+            <label for="field-phone" class="custom-field__label">Телефон</label>
+          </div>
+          <div class="custom-field form-modal__item">
+            <input type="email" name="email" id="field-email" class="custom-field__input">
+            <label for="field-email" class="custom-field__label">Электронная почта</label>
+          </div>
+          <div class="custom-field form-modal__item">
+            <textarea rows="4" name="message" id="field-message" class="custom-field__input"></textarea>
+            <label for="field-message" class="custom-field__label">Сообщение</label>
+          </div>
+            
+          <div class="form-modal__agreement">
+            Нажимая “отправить”, вы даете согласие на 
+            <a href="#" class="custom-link custom-link--personal-data-processing">обработку персональных данных</a>  
+            и соглашаетесь с нашей 
+            <a href="#" class="custom-link custom-link--privacy-policy">политикой конфиденциальности</a>
+          </div>
+          <button class="custom-btn form-modal__confirm">
+            <span class="custom-btn__text">Отправить</span>
+            <svg class="custom-btn__icon">
+              <use xlink:href="#corner"/></svg>
+          </button>
+        </form>
+      </div>
+      
     </main>
   </div>
 <script type="text/javascript" src="./js/index.js"></script></body>
