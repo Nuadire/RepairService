@@ -172,6 +172,9 @@ html {
       height: 32px;
       background-color: #41F6D7;
       border-radius: 0 4px 4px 0; }
+    .main-nav__item--active:focus {
+      outline: none;
+      box-shadow: none; }
 
 .general {
   margin: 0;
@@ -207,12 +210,8 @@ html {
                 filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2)); } }
   .general__overlay {
     display: none; }
-    @media screen and (min-width: 0) {
-      .general__overlay--active {
-        display: block; } }
-    @media screen and (min-width: 1366px) {
-      .general__overlay--active {
-        display: none; } }
+    .general__overlay--active {
+      display: block; }
   .general__page {
     grid-column-start: 2; }
     @media screen and (min-width: 1366px) {
@@ -988,6 +987,7 @@ html {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1B1C21;
+  font-weight: normal;
   font-family: "TT Lakes", Arial, sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1088,15 +1088,7 @@ html {
 
 .custom-field {
   position: relative; }
-  .custom-field__label {
-    opacity: 0.3;
-    font-weight: bold;
-    position: absolute;
-    top: 13px;
-    left: 16px;
-    font-family: "TT Lakes", Arial, sans-serif;
-    font-size: 16px; }
-  .custom-field__input {
+  .custom-field__textarea, .custom-field__input {
     display: block;
     width: 100%;
     padding: 12px 16px;
@@ -1104,21 +1096,66 @@ html {
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #EAEAEA; }
-    .custom-field__input:focus {
+    .custom-field__textarea:focus, .custom-field__input:focus {
       outline: 0;
       box-shadow: 0 0 0 2px #41F6D7;
       background: white; }
-      .custom-field__input:focus + .custom-field__label {
-        opacity: 0; }
+    .custom-field__textarea::-webkit-input-placeholder, .custom-field__input::-webkit-input-placeholder {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      font-family: "TT Lakes", Arial, sans-serif;
+      font-size: 16px; }
+    .custom-field__textarea::-moz-placeholder, .custom-field__input::-moz-placeholder {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      font-family: "TT Lakes", Arial, sans-serif;
+      font-size: 16px; }
+    .custom-field__textarea:-ms-input-placeholder, .custom-field__input:-ms-input-placeholder {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      font-family: "TT Lakes", Arial, sans-serif;
+      font-size: 16px; }
+    .custom-field__textarea::-ms-input-placeholder, .custom-field__input::-ms-input-placeholder {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      font-family: "TT Lakes", Arial, sans-serif;
+      font-size: 16px; }
+    .custom-field__textarea::placeholder, .custom-field__input::placeholder {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      font-family: "TT Lakes", Arial, sans-serif;
+      font-size: 16px; }
+  .custom-field__textarea {
+    resize: none; }
+
+.custom-link {
+  color: #FF3E79;
+  text-decoration: none; }
 
 .modal-connection {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   height: 100vh;
   background-color: white;
   border-left: 1 solid #D9FFF5;
-  z-index: 100; }
+  z-index: 105; }
   @media screen and (min-width: 0) {
     .modal-connection {
       width: 100%;
@@ -1127,14 +1164,22 @@ html {
     .modal-connection {
       width: 440px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-      padding: 40px 32px; } }
+      padding: 20px 32px; } }
+  @media screen and (min-width: 640px) {
+    .modal-connection__close {
+      position: absolute;
+      left: -72px; } }
+  .modal-connection--feedback--open {
+    display: block; }
+  .modal-connection--request-call--open {
+    display: block; }
 
 .form-modal {
   display: flex;
   flex-direction: column; }
   .form-modal__item {
     margin-bottom: 16px; }
-  .form-modal__confirm {
+  .form-modal__submit {
     margin-top: 19px;
     align-self: flex-end; }
 

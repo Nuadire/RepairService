@@ -476,29 +476,29 @@
           </div>
         </footer>
       </div>
-      <div class="modal-connection feedback">
+      <div class="modal-connection modal-connection--feedback">
         <header class="modal-connection__header">
-          <button class="interaction modal-connection__close-feedback">
+          <button class="interaction modal-connection__close modal-connection__close--feedback">
             <img src="img/header/close.svg" alt="close-menu" class="interaction__img">
           </button>
           <h2 class="header-title header-title--h2">Обратная связь</h2>
         </header>
         <form name="feedback" action="#" method="post" class="form-modal modal-connection__form">
           <div class="custom-field form-modal__item">
-            <input autofocus required type="text" name="name" id="field-name" class="custom-field__input">
-            <label for="field-name" class="custom-field__label">Имя</label>
+            <input autofocus required type="text" name="name" id="field-name" class="custom-field__input" placeholder="Имя">
+            
           </div>
           <div class="custom-field form-modal__item">
-            <input required type="text" name="phone" id="field-phone" class="custom-field__input">
-            <label for="field-phone" class="custom-field__label">Телефон</label>
+            <input required type="tel" name="phone" id="field-phone" class="custom-field__input" placeholder="Телефон">
+            
           </div>
           <div class="custom-field form-modal__item">
-            <input type="email" name="email" id="field-email" class="custom-field__input">
-            <label for="field-email" class="custom-field__label">Электронная почта</label>
+            <input type="email" name="email" id="field-email" class="custom-field__input" placeholder="Электронная почта">
+            
           </div>
           <div class="custom-field form-modal__item">
-            <textarea rows="4" name="message" id="field-message" class="custom-field__input"></textarea>
-            <label for="field-message" class="custom-field__label">Сообщение</label>
+            <textarea rows="4" name="message" id="field-message" class="custom-field__textarea" placeholder="Сообщение"></textarea>
+            
           </div>
             
           <div class="form-modal__agreement">
@@ -507,14 +507,38 @@
             и соглашаетесь с нашей 
             <a href="#" class="custom-link custom-link--privacy-policy">политикой конфиденциальности</a>
           </div>
-          <button class="custom-btn form-modal__confirm">
+          <button type="submit" class="custom-btn form-modal__submit">
             <span class="custom-btn__text">Отправить</span>
             <svg class="custom-btn__icon">
               <use xlink:href="#corner"/></svg>
           </button>
         </form>
       </div>
-      
+      <div class="modal-connection modal-connection--request-call">
+        <header class="modal-connection__header">
+          <button class="interaction modal-connection__close modal-connection__close--request-call">
+            <img src="img/header/close.svg" alt="close-menu" class="interaction__img">
+          </button>
+          <h2 class="header-title header-title--h2">Обратная связь</h2>
+        </header>
+        <form name="request-call" action="#" method="post" class="form-modal modal-connection__form">
+          <div class="custom-field form-modal__item">
+            <input required type="tel" name="phone" id="client-phone" class="custom-field__input" placeholder="Телефон">
+            
+          </div>            
+          <div class="form-modal__agreement">
+            Нажимая “отправить”, вы даете согласие на 
+            <a href="#" class="custom-link custom-link--personal-data-processing">обработку персональных данных</a>  
+            и соглашаетесь с нашей 
+            <a href="#" class="custom-link custom-link--privacy-policy">политикой конфиденциальности</a>
+          </div>
+          <button type="submit" class="custom-btn form-modal__submit">
+            <span class="custom-btn__text">Отправить</span>
+            <svg class="custom-btn__icon">
+              <use xlink:href="#corner"/></svg>
+          </button>
+        </form>
+      </div>
     </main>
   </div>
 <script type="text/javascript" src="./js/index.js"></script></body>
