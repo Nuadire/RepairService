@@ -31,7 +31,7 @@
     }
 
     &--active {
-      display: initial;
+      display: flex;
 
       @media screen and (min-width: $screen-xs) {
         width: 100%;
