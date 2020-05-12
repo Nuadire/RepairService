@@ -199,7 +199,7 @@ html {
     .general__menu {
       display: flex; } }
   .general__menu--active {
-    display: initial; }
+    display: flex; }
     @media screen and (min-width: 0) {
       .general__menu--active {
         width: 100%; } }
