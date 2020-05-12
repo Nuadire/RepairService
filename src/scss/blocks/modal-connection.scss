@@ -1,11 +1,12 @@
 .modal-connection {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   height: 100vh;
   background-color: white;
   border-left: 1 solid $color-border;
-  z-index: 100;
+  z-index: 105;
 
   @media screen and (min-width: $screen-xs) {
     width: 100%;
@@ -13,10 +14,23 @@
   }
 
   @media screen and (min-width: $screen-sm) {
-    width: 440px;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-    padding: 40px 32px;
+      width: 440px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+      padding: 20px 32px;
+    }
+    
+    &__close {
+        
+        @media screen and (min-width: $screen-sm) {
+            position: absolute;
+            left: -72px;
+        }
   }
 
-
+  &--feedback--open {
+      display: block;
+  }
+  &--request-call--open {
+      display: block;
+  }
 }

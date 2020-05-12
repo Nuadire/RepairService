@@ -1,16 +1,17 @@
 .custom-field {
   position: relative;
 
-  &__label {
-    opacity: 0.3;
-    font-weight: bold;
-    position: absolute;
-    top: 13px;
-    left: 16px;
-    font-family: $font-family;
-    font-size: 16px;
-  }
+//   &__label {
+//     opacity: 0.3;
+//     font-weight: bold;
+//     position: absolute;
+//     top: 13px;
+//     left: 16px;
+//     font-family: $font-family;
+//     font-size: 16px;
+//   }
 
+  &__textarea,
   &__input {
     display: block;
     width: 100%;
@@ -24,11 +25,28 @@
       outline: 0;
       box-shadow: 0 0 0 2px $color-focus;
       background: white;
-
-      &+.custom-field__label {
-        opacity: 0;
-      }
+        // &+.custom-field__label {
+        //   opacity: 0;
+        // }
     }
+
+    &::placeholder{
+        opacity: 0.3;
+        font-weight: bold;
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        font-family: $font-family;
+        font-size: 16px;
+    }
+
+    // &:not(:placeholder-shown) {
+    //   &+.custom-field__label {
+    //     opacity: 0;
+    //   }
+
+    // }
+
 
     // &:valid {
     //   background: url("../img/check.svg");
@@ -48,7 +66,9 @@
     //     opacity: 0;
     //   }
     // }
+  }
 
-
+  &__textarea {
+    resize: none;
   }
 }

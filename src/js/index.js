@@ -2,6 +2,7 @@ import '../scss/style.scss';
 import './blocks/show_more';
 import './blocks/nav-page';
 import './blocks/menu';
+import './blocks/modal-connection';
 
 const SCREEN_SM = 640;
   // SCREEN_XL = 1366;
