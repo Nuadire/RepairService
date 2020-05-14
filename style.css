@@ -208,9 +208,20 @@ html {
         width: 360px;
         -webkit-filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
                 filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2)); } }
-  .general__overlay {
-    display: none; }
-    .general__overlay--active {
+  .general__overlay--menu {
+    display: none;
+    z-index: 99; }
+    .general__overlay--menu--open {
+      display: block; }
+  .general__overlay--feedback {
+    display: none;
+    z-index: 104; }
+    .general__overlay--feedback--open {
+      display: block; }
+  .general__overlay--request-call {
+    display: none;
+    z-index: 104; }
+    .general__overlay--request-call--open {
       display: block; }
   .general__page {
     grid-column-start: 2; }
