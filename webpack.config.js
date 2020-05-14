@@ -14,8 +14,8 @@ module.exports = {
 
   // Выходной файл
   output: {
-    // filename: './js/[name].[contenthash].js',
-    filename: './js/index.js',
+    filename: './js/[name].[contenthash].js',
+    // filename: './js/index.js',
     path: path.resolve(__dirname, "dist")
   },
 
@@ -92,8 +92,8 @@ module.exports = {
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: 'style.css',
-      // filename: '[name].[contenthash].css',
+      // filename: 'style.css',
+      filename: '[name].[contenthash].css',
     }),
 
     // Копируем картинки
