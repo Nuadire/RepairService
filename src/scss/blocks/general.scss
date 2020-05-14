@@ -44,17 +44,32 @@
     }
   }
 
-  &__overlay {
-    display: none;
-
-    &--active {
-      display: block;
-      // @media screen and (min-width: $screen-xs) {
-      // }
-
-      // @media screen and (min-width: $screen-xl) {
-      //   display: none;
-      // }
+  &__overlay {    
+    &--menu {
+      display: none;
+      z-index: 99;
+      
+      &--open {
+        display: block;
+      }
+    }
+    
+    &--feedback {
+      display: none;
+      z-index: 104;
+      
+      &--open {
+        display: block;
+      }
+    }
+    
+    &--request-call {
+      display: none;
+      z-index: 104;
+      
+      &--open {
+        display: block;
+      }
     }
   }
 

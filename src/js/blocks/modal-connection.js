@@ -1,47 +1,48 @@
-const OVERLAY_NODE = document.querySelector(".general__overlay");
+
 // modal open
-const constructorOpenModal = (classNode, addClass) => {
+const constructorOpenModal = (classNode) => {
+  const unique = classNode.split("--")[1];
+  const modalNode = document.querySelector("." + classNode);
+  const overlay = document.querySelector(".general__overlay--" + unique);
   return function (evt) {
     if (evt.type === "click" || evt.keyCode === 13) {
       document.body.style.overflowY = "hidden";
       document.body.parentElement.style.overflowY = "hidden";
-      document.querySelector("." + classNode).classList.add(addClass);
-      //   const overlay = document.querySelector(".general__overlay");
-      OVERLAY_NODE.classList.add("general__overlay--active");
-      OVERLAY_NODE.style.zIndex = 104;
+      modalNode.classList.add(`${classNode}--open`);
+      overlay.classList.add(`general__overlay--${unique}--open`);
     }
   };
 };
 
 // modal close
-const constructorCloseMunu = (classNode, removeClass) => {
+const constructorCloseMunu = (classNode) => {
+  const unique = classNode.split("--")[1];
+  const modalNode = document.querySelector("." + classNode);
+  const overlay = document.querySelector(".general__overlay--" + unique);
   return function (evt) {
     if (evt.type === "click" || evt.keyCode === 13) {
       document.body.style.overflowY = "auto";
       document.body.parentElement.style.overflowY = "auto";
-      document.querySelector("." + classNode).classList.remove(removeClass);
-      //   const overlay = document.querySelector(".general__overlay");
-      OVERLAY_NODE.classList.remove("general__overlay--active");
-      OVERLAY_NODE.style.zIndex = 99;
+      modalNode.classList.remove(`${classNode}--open`);
+      overlay.classList.remove(`general__overlay--${unique}--open`);
     }
   };
 };
 
+
 // feedback
 document.querySelectorAll(".interaction--request").forEach(el => {
-  el.addEventListener("click", constructorOpenModal("modal-connection--feedback", "modal-connection--feedback--open"));
+  el.addEventListener("click", constructorOpenModal("modal-connection--feedback"));
 });
-const closeFeedback = constructorCloseMunu("modal-connection--feedback", "modal-connection--feedback--open");
+const closeFeedback = constructorCloseMunu("modal-connection--feedback");
 document.querySelector(".modal-connection__close--feedback").addEventListener("click", closeFeedback);
-OVERLAY_NODE.addEventListener("click", closeFeedback);
-document.querySelectorAll(".interaction--request").forEach(el => {
-  el.addEventListener("click", constructorOpenModal("modal-connection--feedback", "modal-connection--feedback--open"));
-});
+document.querySelector(".general__overlay--feedback").addEventListener("click", closeFeedback);
+
 
 // request call
 document.querySelectorAll(".interaction--call").forEach(el => {
-  el.addEventListener("click", constructorOpenModal("modal-connection--request-call", "modal-connection--request-call--open"));
+  el.addEventListener("click", constructorOpenModal("modal-connection--request-call"));
 });
-const closeRequestCall = constructorCloseMunu("modal-connection--request-call", "modal-connection--request-call--open");
+const closeRequestCall = constructorCloseMunu("modal-connection--request-call");
 document.querySelector(".modal-connection__close--request-call").addEventListener("click", closeRequestCall);
-OVERLAY_NODE.addEventListener("click", closeRequestCall);
+document.querySelector(".general__overlay--request-call").addEventListener("click", closeRequestCall);
